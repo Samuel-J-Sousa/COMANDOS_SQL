@@ -1,0 +1,99 @@
+INSERT INTO ATIV(
+CD_ATIV, 
+NM_SIGLA, 
+TX_DESCRICAO
+)
+VALUES(
+'1', 
+'Samuel', 
+'Ele é lindo'
+);
+
+INSERT INTO DEPTO(
+CD_DEPTO,
+ NM_DEPTO,
+ CD_GERENTE
+)
+VALUES(
+'1', 
+'SAMUEL',
+ '4'
+);
+
+INSERT INTO FUNC(
+CD_MAT,
+ NM_FUNC,
+ NM_SOBRENOME,
+ CD_DEPTO,
+ NR_RAMAL,
+ DT_ADM,
+ NR_CARGO,
+ NR_RG,
+ IN_SEXO,
+ DT_NASC,
+ VL_SAL,
+ NM_FOTO
+)
+VALUES(
+'123',
+ 'SA',
+ 'JE',
+ '1',
+ '234',
+ '2008-03-12',
+ '12',
+ '34',
+ 'F', 
+ '1998-04-14',
+ '1500',
+ '2133'
+);
+
+INSERT INTO HST_PROMO(
+CD_MAT,
+ CD_DEPTO,
+ DT_PROMOCAO,
+ VL_SAL,
+ NR_CARGO,
+ TX_MOTIVO
+)
+VALUES(
+'123',
+ '1',
+ '2008-03-12',
+ '1200',
+ '12',
+ 'SA'
+);
+
+INSERT INTO PROJ(
+CD_PROJ,
+ NM_PROJ,
+ CD_DEPTO,
+ CD_RESP,
+ QT_EQP,
+ DT_INI,
+ DT_FIM
+)
+VALUES(
+'P12345',
+ 'Novo Projeto',
+ '1',
+ '12345',
+ '10',
+ '2024-11-01',
+ '2025-01-01'
+);
+
+INSERT INTO PROJETO_ATIVIDADE(
+CD_PROJ,
+CD_ATIV,
+DT_INI,
+DT_FIM
+)
+VALUES(
+'P12345',
+'1',
+ '2024-11-01',
+ '2025-01-01'
+)
